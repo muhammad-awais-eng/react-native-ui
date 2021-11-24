@@ -12,7 +12,7 @@ import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { TouchableOpacity, ScrollView } from "react-native-gesture-handler";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <ImageBackground
       source={require("../images/back.png")}
@@ -87,7 +87,8 @@ const Home = () => {
           showsHorizontalScrollIndicator={false}
           style={{ marginRight: -40, marginTop: 30 }}
         >
-          <View
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Detail")}
             style={{
               alignItems: "center",
               justifyContent: "center",
@@ -102,7 +103,7 @@ const Home = () => {
               source={require("../images/p.png")}
               style={{ height: 24, width: 24 }}
             />
-          </View>
+          </TouchableOpacity>
           <View
             style={{
               alignItems: "center",
@@ -241,7 +242,7 @@ const Home = () => {
                   Pakhtunkhwa, Pakista
                 </Text>
               </View>
-              <Icon name="map-marker" size={25} color="#ff5c83" />
+              <Icon name="map-marker" size={25} color="#5facdb" />
             </View>
           </View>
           <View
