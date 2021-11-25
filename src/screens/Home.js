@@ -26,7 +26,13 @@ const Home = ({ navigation }) => {
           paddingHorizontal: 20,
         }}
       >
-        <Icon name="menu" size={30} color="#a2a2db" style={{ width: 20 }} />
+        <Icon
+          name="menu"
+          size={30}
+          color="#a2a2db"
+          style={{ width: 20 }}
+          onPress={() => navigation.openDrawer()}
+        />
         <Icon
           name="account-circle"
           size={33}

@@ -13,7 +13,7 @@ import ModalCard from "./ModalCard";
 import ListCard from "./ListCards";
 import { ScrollView } from "react-native-gesture-handler";
 
-const Detail = () => {
+const Detail = ({ navigation }) => {
   const [modalVisible, setModalVisible] = useState(false);
 
   const onchange = (e) => {
@@ -33,7 +33,13 @@ const Detail = () => {
           paddingHorizontal: 40,
         }}
       >
-        <Icon name="menu" size={30} color="#a2a2db" style={{ width: 20 }} />
+        <Icon
+          name="menu"
+          size={30}
+          color="#a2a2db"
+          style={{ width: 20 }}
+          onPress={() => navigation.openDrawer()}
+        />
         <Icon
           name="account-circle"
           color="#a2a2db"
@@ -64,7 +70,7 @@ const Detail = () => {
           <Image
             source={require("../images/p.png")}
             style={{
-              height: 26,
+              height: 20,
               width: 26,
             }}
           />
@@ -148,7 +154,7 @@ const Detail = () => {
           flexDirection: "row",
           alignItems: "center",
           paddingHorizontal: 40,
-          marginTop: 60,
+          marginTop: 90,
         }}
       >
         <Image
