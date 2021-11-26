@@ -44,20 +44,21 @@ const Home = ({ navigation }) => {
         <Text
           style={{ fontSize: 40, color: "#522289", fontFamily: "RobotBold" }}
         >
-          HEllO
+          DEWOO
         </Text>
         <Text
           style={{
             fontSize: 15,
-            paddingVertical: 10,
-            paddingRight: 80,
-            lineHeight: 22,
+            paddingVertical: 6,
+            paddingRight: 60,
+            lineHeight: 19,
             fontFamily: "RobotoRegular",
             color: "#a2a2db",
           }}
         >
-          Dummy data is add to check the progress of App,Hope every thing is
-          fine.
+          Dewo understands when you reach deep work, and will automatically
+          silence app notifications and trigger 'Do Not Disturb' mode on chat
+          apps.
         </Text>
 
         <View
@@ -258,7 +259,7 @@ const Home = ({ navigation }) => {
               width: 190,
               borderRadius: 15,
               padding: 5,
-              marginHorizontal: 20,
+              marginHorizontal: 0,
             }}
           >
             <Image
